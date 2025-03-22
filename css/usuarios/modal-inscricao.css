@@ -1,0 +1,76 @@
+/* Estilização do fundo do modal */
+.overlay {
+  display: none; /* Oculta o modal por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilização da caixa do modal */
+.modal {
+  background: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Cabeçalho do modal */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+/* Estilização do título "Inscrever-se" */
+.modal-header h2 {
+  /* Reduzindo o tamanho do título */
+  text-align: center;
+  flex-grow: 1; /* Faz o título ocupar o espaço central */
+  margin: 0;
+}
+
+/* Botão de fechar (X) */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilização dos campos do formulário */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botão de envio */
+#enviar {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

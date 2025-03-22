@@ -106,20 +106,7 @@ header {
   border-radius: 5px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
 
-table, th, td {
-  border: 1px solid #ccc;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-}
 
 .apply-btn {
   background: #007bff;
