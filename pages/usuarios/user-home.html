@@ -17,7 +17,8 @@
     <div class="container">
         <!-- Barra Lateral -->
         <aside class="sidebar">
-            <h2>30 de Setembro</h2>
+            <img src="../../assets/img/logo-branco.png" alt="">
+            <h2 class="title-side-bar">30 de Setembro</h2>
             <nav>
                 <ul>
                     <li class="active"><i data-lucide="calendar-days"></i> Calendário</li>
@@ -31,8 +32,12 @@
         <!-- Conteúdo Principal -->
         <main class="content">
             <header>
-                <h1>Calendários</h1>
-                <p>Controle tudo sobre os calendários</p>
+
+                <div class="title-header">
+                    <h1>Calendários</h1>
+                    <p>Controle tudo sobre os calendários</p>
+                </div>
+                
                 <div class="user-info">
                     <i onclick="openModalNotifications()" class="fa-solid fa-bell  notificacao" id="notificacao-inscricao-abrirModal"></i>
                     <div id="notificacao-modal-container"></div>
@@ -46,7 +51,7 @@
                 <input type="text" placeholder="Pesquisar">
                 <button class="filter-btn"><i class="fa-solid fa-filter"></i> Filtrar pesquisa</button>
             </div>
-            
+           <hr>
             <!-- Tabela de Calendários -->
             <table>
                 <thead>

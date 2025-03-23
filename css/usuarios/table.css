@@ -2,15 +2,16 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
+  font-size: 14px;
 }
 
 /* Fundo azul para os títulos da tabela */
 thead {
-  background-color: #007bff;
+  background-color: #dbdbdb;
 }
 
 th {
-  color: white; /* Deixa o texto branco */
+  color: black; /* Deixa o texto branco */
   padding: 12px;
 }
 
