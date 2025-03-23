@@ -1,33 +1,43 @@
-/* Estilização do dialog */
-dialog {
+/* Estilização do modal */
+#inscricao-modalDialog {  
   border: none;
   border-radius: 8px;
   padding: 20px;
   width: 400px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
+  background: white;
   
-  /* Centraliza o modal na tela */
+  /* Centraliza o modal */
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Modal ativo */
+#inscricao-modalDialog[open] {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 
 /* Fundo escuro ao abrir o modal */
-dialog::backdrop {
+#inscricao-modalDialog::backdrop {
   background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease-out;
 }
 
-/* Estilos internos do modal */
-.modal {
+/* Estrutura interna */
+.inscricao-modal {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 /* Cabeçalho */
-.modal-header {
+.inscricao-modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,39 +46,68 @@ dialog::backdrop {
 }
 
 /* Botão de fechar */
-.close-btn {
+.inscricao-close-btn {
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: transform 0.2s;
 }
 
-/* Estilização dos inputs e selects */
-.form-group {
+.inscricao-close-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Formulário */
+.inscricao-form-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
+  margin-top: 1rem;
+  gap: 10px;
 }
 
-.form-group input,
-.form-group select {
+.inscricao-form-group input,
+.inscricao-form-group select {
+ 
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Botão enviar */
-#enviar {
+.inscricao-form-group input:focus,
+.inscricao-form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botão de envio */
+#inscricao-enviar {
   background-color: #007bff;
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
+  width: 100%;
+  margin-top: 1vh;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-#enviar:hover {
+#inscricao-enviar:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Animação de fade-in para o backdrop */
+@keyframes fadeIn {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }

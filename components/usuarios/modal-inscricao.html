@@ -1,30 +1,37 @@
-<dialog id="modalDialog">
-    <div class="modal">
-        <header class="modal-header">
+<dialog id="inscricao-modalDialog">
+    <div class="inscricao-modal">
+        <header class="inscricao-modal-header">
             <h2>Inscrever-se</h2>
-            <button class="close-btn" id="closeModal">&times;</button>
+            <button class="inscricao-close-btn" id="inscricao-closeModal" aria-label="Fechar">&times;</button>
         </header>
 
-        <div class="form-group">
-            <label for="nome">Nome do Aluno</label>
-            <input type="text" id="nome" placeholder="Digite o seu nome">
-        </div>
-        <div class="form-group">
-            <label for="curso">Curso</label>
-            <select id="curso">
-                <option>Informática</option>
-                <option>Engenharia</option>
-                <option>Administração</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="certificado">Certificado</label>
-            <input type="file" id="certificado">
-        </div>
-        <div class="form-group">
-            <label for="bi">BI</label>
-            <input type="file" id="bi">
-        </div>
-        <button id="enviar">Enviar</button>
+        <form id="inscricao-form">
+            <div class="inscricao-form-group">
+                <label for="inscricao-nome">Nome do Aluno</label>
+                <input type="text" id="inscricao-nome" name="nome" placeholder="Digite o seu nome" autocomplete="name" required>
+            </div>
+
+            <div class="inscricao-form-group">
+                <label for="inscricao-curso">Curso</label>
+                <select id="inscricao-curso" name="curso" required>
+                    <option value="" disabled selected hidden>Selecione um curso</option>
+                    <option value="informatica">Informática</option>
+                    <option value="engenharia">Engenharia</option>
+                    <option value="administracao">Administração</option>
+                </select>
+            </div>
+
+            <div class="inscricao-form-group">
+                <label for="inscricao-certificado">Certificado</label>
+                <input type="file" id="inscricao-certificado" name="certificado" accept=".pdf,.jpg,.png" required>
+            </div>
+
+            <div class="inscricao-form-group">
+                <label for="inscricao-bi">BI</label>
+                <input type="file" id="inscricao-bi" name="bi" accept=".pdf,.jpg,.png" required>
+            </div>
+
+            <button id="inscricao-enviar" class="inscricao-btn" type="submit" disabled>Enviar</button>
+        </form>
     </div>
 </dialog>

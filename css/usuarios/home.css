@@ -9,6 +9,10 @@ html {
   overflow: hidden;
 }
 
+.notificacao{
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   height: 100vh;
