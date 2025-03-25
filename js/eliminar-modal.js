@@ -49,10 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     }
 
-    // Adiciona o evento de clique ao botão "Excluir"
-    const btnExcluir = document.getElementById("btn-excluir");
-    if (btnExcluir) {
-        btnExcluir.addEventListener("click", function () {
+   // Adiciona o evento de clique a todos os botões "Excluir"
+const btnsExcluir = document.getElementsByClassName("btn-excluir");
+
+if (btnsExcluir.length > 0) {
+    Array.from(btnsExcluir).forEach((btn) => {
+        btn.addEventListener("click", function () {
+    
             showConfirmModal(
                 "Excluir Item",
                 "Tem certeza que deseja excluir este item? Essa ação não pode ser desfeita.",
@@ -61,5 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             );
         });
-    }
+    });
+}
+
 });

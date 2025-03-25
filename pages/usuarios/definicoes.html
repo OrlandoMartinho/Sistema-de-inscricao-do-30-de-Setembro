@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendários - Sistema de Inscrição</title>
-    <link rel="stylesheet" href="../../css/usuarios/home.css">
+    <title>Configurações- Sistema de Inscrição</title>
+    <link rel="stylesheet" href="../../css/usuarios/definicoes.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/usuarios/table.css">
     <link rel="stylesheet" href="../../css/usuarios/modal-inscricao.css">
     <link rel="stylesheet" href="../../css/notificacao.css">
+    <link rel="stylesheet" href="../../css/usuarios/modal-detalhes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/modal-eliminar.css">
  
 </head>
 <body>
@@ -21,10 +23,9 @@
             <h2 class="title-side-bar">30 de Setembro</h2>
             <nav>
                 <ul>
-                    <li class="active"><i data-lucide="calendar-days"></i> Calendário</li>
-                    <a href="inscricoes.html"><li><i data-lucide="file-text"></i> Inscrições</li> </a>   
-                    
-                    <a href="definicoes.html"><li><i data-lucide="settings"></i> Configurações</li></a>
+                    <a href="user-home.html"><li ><i data-lucide="calendar-days"></i> Calendário</li></a>
+                   <a href="inscricoes.html"><li ><i data-lucide="file-text"></i> Inscrições</li></a> 
+                    <li class="active"><i data-lucide="settings"></i> Configurações</li>
                     <li class="logout"><i data-lucide="log-out"></i> Sair do sistema</li>
                 </ul>
             </nav>
@@ -35,8 +36,8 @@
             <header>
 
                 <div class="title-header">
-                    <h1>Calendários</h1>
-                    <p>Controle tudo sobre os calendários</p>
+                    <h1>Configurações</h1>
+                    
                 </div>
 
                 <div class="container-notification">
@@ -47,7 +48,7 @@
                     
                     <i onclick="openModalNotifications()" class="fa-solid fa-bell  notificacao" id="notificacao-inscricao-abrirModal"></i>
                    
-                    <i data-lucide="user"></i>
+                   <i data-lucide="user"></i>
                     <span>Pedro.F</span>
                 </div>
             </header>
@@ -58,27 +59,18 @@
                 <button class="filter-btn"><i class="fa-solid fa-filter"></i> Filtrar pesquisa</button>
             </div>
            <hr>
-            <!-- Tabela de Calendários -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Requisitos</th>
-                        <th>Curso</th>
-                        <th>Data de Término</th>
-                        <th>Ação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>01</td>
-                        <td>BI, Certificado</td>
-                        <td>Regulamentação da Aviação Civil</td>
-                        <td>15/08/2024</td>
-                        <td><button class="apply-btn" onclick="openModalInscricao()"><i class="fa-solid fa-user-plus" ></i> Candidatar-se</button></td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <section class="settings-section">
+               <div class="item-section">
+                    <h3>Informações de conta</h3>
+                    <p>Altere os dados básicos do usuario</p>
+               </div>
+               <hr>
+               <div class="item-section">
+                    <h3>Segurança</h3>
+                    <p>Opções relacionadas à segurança e acesso da conta</p>
+               </div>
+            </section>
         </main>
     </div>
 
@@ -88,8 +80,9 @@
 
     <!-- Inicialização dos ícones da Lucide -->
    
+   
+    <script src="../../js/usuarios/definicoes.js"></script>
     <script src="../../js/usuarios/modalConfig.js"></script>
-    
   
     <script>
         lucide.createIcons();

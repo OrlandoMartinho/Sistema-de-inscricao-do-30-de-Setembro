@@ -14,9 +14,7 @@
     transform: translate(-50%, -50%);
 }
 
-#detalhes-modal i {
-    
-}
+
 
 /* Fundo escurecido ao abrir o modal */
 dialog::backdrop {

@@ -11,7 +11,7 @@ dialog#confirm-modal {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.8);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -22,6 +22,39 @@ dialog[open]#confirm-modal {
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
+}
+
+/* Animação de entrada */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Animação de saída */
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+/* Aplicando animações */
+dialog[open]#confirm-modal {
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+dialog#confirm-modal.closing {
+    animation: modalFadeOut 0.3s ease-in;
 }
 
 /* Cabeçalho do modal */
@@ -56,6 +89,11 @@ dialog[open]#confirm-modal {
     font-size: 15px;
     font-weight: bold;
     transition: 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.confirm-buttons button:hover {
+    transform: scale(1.05);
 }
 
 /* Botão de cancelar */

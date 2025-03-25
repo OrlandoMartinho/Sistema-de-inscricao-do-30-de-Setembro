@@ -25,7 +25,8 @@
                 <ul>
                     <a href="user-home.html"><li ><i data-lucide="calendar-days"></i> Calendário</li></a>
                     <li class="active"><i data-lucide="file-text"></i> Inscrições</li>
-                    <li><i data-lucide="settings"></i> Configurações</li>
+                    <a href="definicoes.html"><li><i data-lucide="settings"></i> Configurações</li></a>
+                    
                     <li class="logout"><i data-lucide="log-out"></i> Sair do sistema</li>
                 </ul>
             </nav>
@@ -48,7 +49,7 @@
                     
                     <i onclick="openModalNotifications()" class="fa-solid fa-bell  notificacao" id="notificacao-inscricao-abrirModal"></i>
                    
-                    <img src="user.png" alt="Foto do usuário">
+                    <i data-lucide="user"></i>
                     <span>Pedro.F</span>
                 </div>
             </header>
@@ -72,7 +73,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li id="btn-excluir">Excluir</li>
+                        <li class="btn-excluir">Excluir</li>
                         <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -88,7 +89,7 @@
                 <dialog class="mini-modal">
                     <ul>
                         <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                         <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -104,7 +105,39 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
+                         <li  onclick="openModalDetalhes()">Detalhes</li>
+                    </ul>
+                </dialog>
+            </div>
+            
+            <div class="cartao">
+                <button class="menu-btn">⋮</button>
+                <i data-lucide="folder"></i>
+                <div class="nome">Informática</div>
+                <div class="data">12/12/2003 18:00</div>
+            
+                <!-- Mini Modal usando <dialog> -->
+                <dialog class="mini-modal">
+                    <ul>
+                       <li onclick="openModalInscricao()">Editar</li>
+                         <li class="btn-excluir">Excluir</li>
+                         <li  onclick="openModalDetalhes()">Detalhes</li>
+                    </ul>
+                </dialog>
+            </div>
+            
+            <div class="cartao">
+                <button class="menu-btn">⋮</button>
+                <i data-lucide="folder"></i>
+                <div class="nome">Informática</div>
+                <div class="data">12/12/2003 18:00</div>
+            
+                <!-- Mini Modal usando <dialog> -->
+                <dialog class="mini-modal">
+                    <ul>
+                       <li onclick="openModalInscricao()">Editar</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -120,7 +153,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -136,7 +169,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -152,7 +185,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -168,7 +201,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -184,56 +217,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
-                           <li  onclick="openModalDetalhes()">Detalhes</li>
-                    </ul>
-                </dialog>
-            </div>
-            
-            <div class="cartao">
-                <button class="menu-btn">⋮</button>
-                <i data-lucide="folder"></i>
-                <div class="nome">Informática</div>
-                <div class="data">12/12/2003 18:00</div>
-            
-                <!-- Mini Modal usando <dialog> -->
-                <dialog class="mini-modal">
-                    <ul>
-                       <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
-                           <li  onclick="openModalDetalhes()">Detalhes</li>
-                    </ul>
-                </dialog>
-            </div>
-            
-            <div class="cartao">
-                <button class="menu-btn">⋮</button>
-                <i data-lucide="folder"></i>
-                <div class="nome">Informática</div>
-                <div class="data">12/12/2003 18:00</div>
-            
-                <!-- Mini Modal usando <dialog> -->
-                <dialog class="mini-modal">
-                    <ul>
-                       <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
-                           <li  onclick="openModalDetalhes()">Detalhes</li>
-                    </ul>
-                </dialog>
-            </div>
-            
-            
-            <div class="cartao">
-                <button class="menu-btn">⋮</button>
-                <i data-lucide="folder"></i>
-                <div class="nome">Informática</div>
-                <div class="data">12/12/2003 18:00</div>
-            
-                <!-- Mini Modal usando <dialog> -->
-                <dialog class="mini-modal">
-                    <ul>
-                       <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -250,7 +234,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -267,7 +251,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -284,7 +268,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -301,7 +285,24 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                         <li class="btn-excluir">Excluir</li>
+                           <li  onclick="openModalDetalhes()">Detalhes</li>
+                    </ul>
+                </dialog>
+            </div>
+            
+            
+            <div class="cartao">
+                <button class="menu-btn">⋮</button>
+                <i data-lucide="folder"></i>
+                <div class="nome">Informática</div>
+                <div class="data">12/12/2003 18:00</div>
+            
+                <!-- Mini Modal usando <dialog> -->
+                <dialog class="mini-modal">
+                    <ul>
+                       <li onclick="openModalInscricao()">Editar</li>
+                         <li class="btn-excluir">Excluir</li>
                            <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
