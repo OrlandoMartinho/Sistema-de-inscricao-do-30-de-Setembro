@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/notificacao.css">
     <link rel="stylesheet" href="../../css/usuarios/modal-detalhes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/modal-eliminar.css">
  
 </head>
 <body>
@@ -58,6 +59,8 @@
                 <button class="filter-btn"><i class="fa-solid fa-filter"></i> Filtrar pesquisa</button>
             </div>
            <hr>
+
+           <div id="eliminar-modal-container"></div>
            <section class="sessao">
             <div class="cartao">
                 <button class="menu-btn">⋮</button>
@@ -69,7 +72,7 @@
                 <dialog class="mini-modal">
                     <ul>
                        <li onclick="openModalInscricao()">Editar</li>
-                        <li>Excluir</li>
+                        <li id="btn-excluir">Excluir</li>
                         <li  onclick="openModalDetalhes()">Detalhes</li>
                     </ul>
                 </dialog>
@@ -318,6 +321,7 @@
    
     <script src="../../js/usuarios/inscricoes.js"></script>
     <script src="../../js/usuarios/open-modals.js"></script>
+    <script src="../../js/eliminar-modal.js"></script>
   
     <script>
         lucide.createIcons();
