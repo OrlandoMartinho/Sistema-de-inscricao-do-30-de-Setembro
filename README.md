@@ -56,6 +56,7 @@ Armazena comentários sobre as inscrições.
 - **nome_da_entidade (VARCHAR(255))** - Nome da entidade que fez o comentário.
 - **id_inscricao (INT)** - Chave estrangeira referenciando `Inscricoes`.
 - **id_avaliador (INT)** - Chave estrangeira referenciando `Avaliadores`.
+- **aprovacao (INT)** - Aprovação da entidade.
 
 **Relacionamentos:**
 - Um comentário pertence a uma inscrição e pode ser feito por um avaliador.
