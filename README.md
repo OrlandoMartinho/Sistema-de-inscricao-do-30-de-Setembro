@@ -52,7 +52,7 @@ Registra as inscrições dos alunos nos cursos.
 Armazena comentários sobre as inscrições.
 
 - **id_comentario (INT)** - Chave primária.
-- **message (VARCHAR(255))** - Conteúdo do comentário.
+- **conteudo (VARCHAR(255))** - Conteúdo do comentário.
 - **nome_da_entidade (VARCHAR(255))** - Nome da entidade que fez o comentário.
 - **id_inscricao (INT)** - Chave estrangeira referenciando `Inscricoes`.
 - **id_avaliador (INT)** - Chave estrangeira referenciando `Avaliadores`.
