@@ -19,6 +19,7 @@ Armazena informações sobre os usuários cadastrados no sistema.
 **Relacionamentos:**
 - Um usuário pode ter várias notificações.
 - Um usuário pode realizar várias inscrições.
+- Um usuário pode ser um avaliador.
 
 ### 2. **Notificacoes**
 Armazena notificações enviadas para os usuários.
@@ -26,7 +27,7 @@ Armazena notificações enviadas para os usuários.
 - **id_notificacao (INT)** - Chave primária.
 - **data_da_notificacao (VARCHAR(100))** - Data da notificação.
 - **descricao (VARCHAR(255))** - Descrição da notificação.
-- **Usuarios_id_usuario (INT)** - Chave estrangeira referenciando `Usuarios`.
+- **id_usuario (INT)** - Chave estrangeira referenciando `Usuarios`.
 
 **Relacionamentos:**
 - Cada notificação pertence a um único usuário.
@@ -67,8 +68,10 @@ Registra os avaliadores que podem comentar nas inscrições.
 - **data_de_emissao_da_licensa (VARCHAR(255))** - Data de emissão da licença.
 - **data_de_expiracao_da_licensa (VARCHAR(255))** - Data de expiração da licença.
 - **numero_de_telefone (VARCHAR(45))** - Número de telefone do avaliador.
+- **id_usuario (INT)** - Chave estrangeira referenciando `Usuarios`.
 
 **Relacionamentos:**
+- Um avaliador é um usuário.
 - Um avaliador pode fazer vários comentários.
 
 ### 6. **Calendarios**
@@ -96,4 +99,3 @@ Armazena informações sobre os cursos disponíveis.
 
 ## Considerações Finais
 O banco de dados foi projetado para permitir a gestão eficiente das inscrições em cursos, garantindo controle sobre usuários, notificações, avaliações e comentários. Cada entidade foi estruturada para garantir integridade e escalabilidade do sistema.
-
