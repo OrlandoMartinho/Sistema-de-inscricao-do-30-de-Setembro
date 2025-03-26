@@ -8,7 +8,9 @@ document.getElementById("entrar").addEventListener("click", function (event) {
     // Simulação de autenticação (Substitua por uma requisição real à API)
     if (email.includes("avaliador")) {
         window.location.href = "../../pages/avaliadores/avaliador-home.html"
-    } else {
+    } else if(email.includes("admin")){
+        window.location.href = "../../pages/admin/admin-home.html";
+    }else{
         window.location.href = "../../pages/usuarios/user-home.html";
     }
 });
