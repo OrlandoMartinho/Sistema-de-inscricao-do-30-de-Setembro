@@ -46,12 +46,12 @@ Sistema_De_Inscricao/
 
 1️⃣ **Clone o repositório**:  
 ```sh
-git clone https://github.com/seu-usuario/sistema-de-inscricao.git
+git clone -b frontend https://github.com/OrlandoMartinho/Sistema-de-inscricao-do-30-de-Setembro.git
 ```
 
 2️⃣ **Acesse a pasta do projeto**:  
 ```sh
-cd sistema-de-inscricao
+cd Sistema-de-inscricao-do-30-de-Setembro
 ```
 
 3️⃣ **Abra o arquivo `index.html` no navegador**:  
