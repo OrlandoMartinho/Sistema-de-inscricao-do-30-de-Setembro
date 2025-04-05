@@ -15,7 +15,6 @@ Este banco de dados foi projetado para gerenciar um sistema completo de gestão 
 
 O sistema consiste em 7 entidades principais inter-relacionadas:
 
-![Diagrama Entidade-Relacionamento](DER.png)
 
 ## Estrutura Detalhada das Tabelas
 
